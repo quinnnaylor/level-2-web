@@ -1,0 +1,62 @@
+<!doctype html>
+
+<head>
+    <title> nuke the americans</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        setInterval(imgChanger, 2000);
+
+        var imgs = ['slide-thing/dawn-photo.jpg', 'slide-thing/day-photo.webp', 'slide-thing/dusk-photo.jpg', 'slide-thing/night-photo.jpg',]
+
+        var i = 0;
+
+        function imgChanger() {
+            document.getElementById('slideReel').src = imgs[i];
+//            console.log(i)
+            i++;
+            if (i >= imgs.length) {
+                i = 0;
+            }
+        }
+
+    </script>
+
+    <style>
+        html {
+            background-image: url(images/NEW_BACKGROUND.jpg);
+        }
+
+    </style>
+<meta charset="utf-8">
+</head>
+<div class="main">
+    <nav>
+        <a href="index.html">Main</a>
+        <a href="survival.html">Survival</a>
+        <a href="day-night.html">Day/Night</a>
+        <a href="weapons.html">Weapons</a>
+    </nav>
+    <section class="section-day-night">
+        <div class="imgSlides">
+            <img id="slideReel" onclick="imgChanger()"  alt="time" src="slide-thing/day-photo.webp">
+<!--            slide thing -->
+        </div>
+        <h1 class="whats-safe-day"> in the day time all zombies are docile and slow but will try and attack you</h1>
+        
+        <h1 class="to-be-safe-day"> open/height </h1>
+        <h1 class="safe-day">safe</h1>
+        
+        <h1 class="to-be-not-safe-day"> cofiend/ground </h1>
+        <h1 class="not-safe-day">not safe</h1>
+        
+        
+        <h1 class="whats-safe-night"> during the night zombies are extreamly fast and agile, they turn into vicious beasts that will hunt you down at no cost. </h1>
+        
+        <h1 class="to-be-safe-night"> stay indoors </h1>
+        <h1 class="safe-night">safe</h1>
+        
+        <h1 class="to-be-not-safe-night"> stay out </h1>
+        <h1 class="not-safe-night">safe not</h1>
+    </section>
+</div>
