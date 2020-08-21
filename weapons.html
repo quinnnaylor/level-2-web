@@ -1,0 +1,92 @@
+<!doctype html>
+
+<head>
+    <title> nuke the americans</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <script>
+        setInterval(imgChanger, 1000);
+
+        var batSlide = ['images/bat.png', 'bat-slide-thing/bat-thing-2.png', 'bat-slide-thing/bat-thing-3.png']// bat slide thing code
+        
+        var sorwdSlide = ['images/sorwd.png', 'sorwd-slide-thing/sorwd-slide-1.png', 'sorwd-slide-thing/sorwd-slide-2.png']// sorwd slide thing code 
+        
+        var hammerSlide = ['images/sleadge-hammer.png', 'sleadge-hammer-slide-thing/hammer-slide-2.png', 'sleadge-hammer-slide-thing/hammer-slide-3.png']// hammer slide thing code
+        
+        var pistolSlide = ['images/pistol.png', 'pistol-slide-thing/pistol-slide-2.png', 'pistol-slide-thing/pistol-slide-3.png']// pistol  slide thing code
+
+        var i = 0;
+
+        function imgChanger() {
+            document.getElementById('slider2').src = batSlide[i];
+            document.getElementById('slider3').src = sorwdSlide[i];
+            document.getElementById('slider4').src = hammerSlide[i];
+            document.getElementById('slider5').src = pistolSlide[i];
+//            console.log(i)
+            i++;
+            if (i >= batSlide.length) {
+                i = 0;
+            }
+            
+            if (i >= sorwdSlide.length) {
+                i = 0;
+            }
+
+            if (i >= hammerSlide.length) {
+                i = 0;
+            }
+            
+            if (i >= pistolSlide.length) {
+                i = 0;
+            }
+        }
+
+    </script>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <a href="index.html">Main</a>
+            <a href="survival.html">Survival</a>
+            <a href="day-night.html">Day/Night</a>
+            <a href="weapons.html">Weapons</a>
+        </nav>
+        <section class="section-weapons">
+            <h1 class="Weapons_text"> there is a diverse range of weapons at your disposal in a town. the main one you canm come across is a sharp cooking knife in your kitchen. this weapon is bad for an apocalyps because its sort and fragile. while killing a zombie you want to be as far away as possible so you donty get bitten.</h1>
+            
+                <div class="bat-box">
+                <img class="bat" alt="tink" id="slider2" src="images/bat.png">
+                </div>
+                <h1 class="bat-text">the baseball bat is a good choice for a zombie apocalyps becuase its light sturdt and can pack a punch.</h1>
+                <h1 class="bat-index">bat index</h1>
+<!--                end of bat stuff-->
+
+                <div class="hammer-box">
+                <img class="hammer" alt="big ol yeet" id="slider4" src="images/sleadge-hammer.png">
+                </div>
+                <h1 class="hammer-text">the hammer is a good choice for a few zombies, it is hard to swing but hits extreamly hard.</h1>
+                <h1 class="hammer-index">hammer index</h1>
+<!--                end of hammer stuff-->
+
+                <div class="sorwd-box">
+                <img class="sorwd" alt="slice slice" id="slider3" src="images/sorwd.png">
+                </div>
+                <h1 class="sorwd-text">the sorwd is an ideal choice because of the damage it can do if it is used properly, and the light weight and silence</h1>
+                <h1 class="sorwd-index">sorwd index</h1>
+<!--                end of sorwd stuff-->
+
+                <div class="pistol-box">
+                <img class="pistol" alt="pew pew" id="slider5" src="images/pistol.png">
+                </div>
+                <h1 class="pistol-text">the pistol is a great choice for when there are a lot of zombies, it it loud and can alert zombies from a long way away.</h1>
+                <h1 class="pistol-index">pistol index</h1>
+<!--                end of pistol stuff-->
+            
+        </section>
+        <footer>
+            
+        </footer>
+    </div>
+</body>
